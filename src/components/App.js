@@ -1,14 +1,12 @@
 import React from "react";
 import Header from "./Header";
+import KegList from "./KegList";
 
 function App(){
   return (
     <React.Fragment>
       <Header />
-      <h3>Keg name</h3>
-      <h5>Keg brand</h5>
-      <h5>Keg price</h5>
-      <h5>Keg alcoholContent</h5>
+      <KegList />
     </React.Fragment>
   );
 }
