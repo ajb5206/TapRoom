@@ -3,10 +3,10 @@ import React from "react";
 function Keg(props){
 	return(
 		<React.Fragment>
-		<p>{props.name}</p>
-		<p>{props.brand}</p>
-		<p>{props.price}</p>
-		<p>{props.alcoholContent}</p>
+		<p>Beer Name: {props.name}</p>
+		<p>Brand: {props.brand}</p>
+		<p>Price: {props.price}</p>
+		<p>alcoholContent {props.alcoholContent}</p>
 		</React.Fragment>
 	);
 }
