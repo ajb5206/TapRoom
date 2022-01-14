@@ -1,9 +1,28 @@
 import React from "react";
+import { v4 } from 'uuid';
 
-function NewKegForm(props){
+function NewKegForm(){
 	return (
 		<React.Fragment>
-			<h3>NewKegForm</h3>
+			<form onSubmit={handleNewKegFormSubmission}>
+        <input
+          type='text'
+          name='name'
+          placeholder='Beer Name' />
+        <input
+          type='text'
+          name='brand'
+          placeholder='Beer Brand' />
+        <input
+					type='number'
+          name='price'
+          placeholder='Beer Price' />
+				<input
+          type='number'
+          name='alcoholContent'
+          placeholder='Alcohol Content' />
+        <button type='submit'>Submit new Keg!</button>
+      </form>
 		</React.Fragment>
 	);
 }
