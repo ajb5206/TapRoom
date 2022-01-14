@@ -2,6 +2,12 @@ import React from "react";
 import { v4 } from 'uuid';
 
 function NewKegForm(){
+	
+	function handleNewKegFormSubmission(event){
+		event.preventDefault();
+		console.log(event.target.name.value);
+	}
+	
 	return (
 		<React.Fragment>
 			<form onSubmit={handleNewKegFormSubmission}>
