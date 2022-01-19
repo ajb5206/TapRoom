@@ -10,26 +10,12 @@ class KegControl extends React.Component {
 		this.state = {
 			formVisibleOnPage: false,
 			mainKegList: [],
-			selectedKeg: null
+			selectedKeg: null,
+			id: 0,
+			newPintsRemaining: 0
 		};
 	}
 
-	// mainKegList = [
-	// 	{
-	// 			name: "Demon Beer",
-	// 			brand: "Beers R Us",
-	// 			price: "188.99",
-	// 			alcoholContent: "8",
-	// 			pintsRemaining: 124
-	// 	},
-	// 	{
-	// 		name: "Hoppy Beer",
-	// 		brand: "Cold Rocky Mountain Beer Group",
-	// 		price: "200.99",
-	// 		alcoholContent: "8.3",
-	// 		pintsRemaining: 124
-	// 	},
-	// ]
 
 	handleClick = () => {
     if (this.state.selectedKeg != null) {
@@ -44,15 +30,32 @@ class KegControl extends React.Component {
     }
   }
 
-	handlePouring = (id) => {
-		let decrementedKegList = this.state.mainKegList;
-		let newPintsRemaining = id.pintsRemaining;
-		decrementedKegList.map(q =>{
-			return(
-			newPintsRemaining=q.pintsRemaining --);
-		});
-			this.setState({pintsRemaining: newPintsRemaining});
-		}
+	// handlePouring = (id) => {
+	// 	let selectedKeg = this.state.mainKegList.filter(keg=> keg.id ===id )[0];
+	// 	let newPintsRemaining = 0;
+	// 	selectedKeg.map(q =>{
+
+	// 		if (q === id.pintsRemaining){
+	// 		return(
+	// 		newPintsRemaining= q.pintsRemaining --)};
+	// 	});
+	// 		this.setState({pintsRemaining: newPintsRemaining});
+	// 	}
+
+	// 	// handlePouring = (id) => {
+		// 	let selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
+		// let newPintsRemaining = id.pintsRemaining;
+		// selectedKeg.map(q =>{
+		// 	return(
+		// 	newPintsRemaining=q.pintsRemaining --);
+		// });
+		// 	this.setState({pintsRemaining: newPintsRemaining});
+		// }
+
+		// handlePouring = (id) => {
+		// 	let newPintsRemaining = id.pintsRemaining --
+		// 	this.setState({pintsRemaining: newPintsRemaining})
+		// 	}
 
 
 	handleAddingNewKegToList = (newKeg) => {
