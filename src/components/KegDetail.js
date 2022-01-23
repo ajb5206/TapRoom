@@ -11,7 +11,6 @@ function KegDetail(props){
 			<h3>{keg.pintsRemaining}</h3>
 			<h2>${keg.price}</h2>
 			<h2>{keg.alcoholContent}%</h2>
-			<h2>{keg.id}</h2>
 			<button onClick={() => onClickingPour(keg.id)}>Pour a pint</button>
 			<hr />
 		</React.Fragment>

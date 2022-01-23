@@ -30,32 +30,12 @@ class KegControl extends React.Component {
     }
   }
 
-	// handlePouring = (id) => {
-	// 	let selectedKeg = this.state.mainKegList.filter(keg=> keg.id ===id )[0];
-	// 	let newPintsRemaining = 0;
-	// 	selectedKeg.map(q =>{
-
-	// 		if (q === id.pintsRemaining){
-	// 		return(
-	// 		newPintsRemaining= q.pintsRemaining --)};
-	// 	});
-	// 		this.setState({pintsRemaining: newPintsRemaining});
-	// 	}
-
-	// 	// handlePouring = (id) => {
-		// 	let selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
-		// let newPintsRemaining = id.pintsRemaining;
-		// selectedKeg.map(q =>{
-		// 	return(
-		// 	newPintsRemaining=q.pintsRemaining --);
-		// });
-		// 	this.setState({pintsRemaining: newPintsRemaining});
-		// }
-
-		// handlePouring = (id) => {
-		// 	let newPintsRemaining = id.pintsRemaining --
-		// 	this.setState({pintsRemaining: newPintsRemaining})
-		// 	}
+	handlePouring = (id) => {
+		let selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
+		let newPintsRemaining = selectedKeg.pintsRemaining;
+		newPintsRemaining= selectedKeg.pintsRemaining --;
+		this.setState({pintsRemaining: newPintsRemaining});
+			}
 
 
 	handleAddingNewKegToList = (newKeg) => {
