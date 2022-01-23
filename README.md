@@ -29,7 +29,7 @@ Welcome to the tap room. Add new kegs by filling out keg information and then po
 Learn about individual keg details by clicking on them. 
 
 ## Component Diagram <a id="diagram"></a>
-![Diagram](src/img/tapRoomDiagram.jpg)
+(src/img/tapRoomDiagram.jpg)
 
 ## Setup/Installation Requirements <a id="setup/install"></a>
 
