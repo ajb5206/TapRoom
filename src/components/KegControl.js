@@ -33,7 +33,13 @@ class KegControl extends React.Component {
 	handlePouring = (id) => {
 		let selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
 		let newPintsRemaining = selectedKeg.pintsRemaining;
+		if (newPintsRemaining === 0)
+		{
+			return;
+		}
+		else{
 		newPintsRemaining= selectedKeg.pintsRemaining --;
+		}
 		this.setState({pintsRemaining: newPintsRemaining});
 			}
 
