@@ -9,6 +9,7 @@
 
 1. [Technologies Used](#technologies)
 2. [Description](#description)
+2. [Diagram](#diagram)
 3. [Setup/Installation Requirements](#setup/install)
 4. [Known Bugs](#knownbugs)
 5. [License](#license)
@@ -26,6 +27,9 @@
 
 Welcome to the tap room. Add new kegs by filling out keg information and then pour pints when customers buy them.
 Learn about individual keg details by clicking on them. 
+
+## Component Diagram <a id="diagram"></a>
+![Diagram](src/img/tapRoomDiagram.jpg)
 
 ## Setup/Installation Requirements <a id="setup/install"></a>
 
